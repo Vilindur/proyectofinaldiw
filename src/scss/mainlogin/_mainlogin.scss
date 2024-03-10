@@ -1,0 +1,56 @@
+@use '../base/variables' as v;
+@use '../base/globals';
+@use '../base/mixins' as m;
+
+.mainlogin {
+    //estilo de login
+    padding-top: 3rem;
+
+    &__form {
+        background-color: v.$pink;
+        border-style: dashed;
+    }
+
+    &__formtitle {
+        font-family: v.$orbitron;
+        color: v.$negro;
+        text-align: center;
+    }
+
+    &__formcontent {
+        font-family: v.$scada;
+        color: v.$negro;
+        text-align: left;
+    }
+
+    &__div {
+        padding-bottom: 3rem;
+    }
+
+    &__input {
+        padding: 1rem;
+    }
+
+    &__divbutton {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        @include m.btn (v.$negro, v.$blanco);
+        max-width: 150px;
+        font-family: v.$scada;
+        font-size: 1.2rem;
+    }
+
+    //estilo de reserva
+    &__datediv {
+        width: 100%;
+    }
+
+    &__datepicker {
+        width: 100%;
+    }
+}

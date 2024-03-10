@@ -1,0 +1,28 @@
+@use '../base/variables' as v;
+@use '../base/globals';
+@use '../base/mixins' as m;
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: v.$azul;
+
+    &__link {
+        text-decoration: none;
+        color: v.$blanco;
+        font-family: v.$scada;
+        font-size: 2rem;
+
+        &:hover {
+            transform: scale(120%);
+        }
+
+        &:active {
+            transform: scale(150%);
+            color: v.$amarillo;
+        }
+    }
+}

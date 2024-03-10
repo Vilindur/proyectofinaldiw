@@ -1,0 +1,33 @@
+@use 'sass:color';
+
+// Reescribimos variables de Bootstrap
+$azul_claro: #7EBCE6;
+$azul_oscuro: #6279B8;
+$amarillo: #F2DD6E;
+$negro: #393D3F;
+$rosa: #FAC8CD;
+$azul: #2D82B7;
+$blanco: #E9FFF9;
+
+// Asignamos nuestra paleta de colores al variables de Bootstrap
+$info: $azul_claro;
+$blue: $azul;
+$primary: $azul_oscuro;
+$dark: $negro;
+$white: $blanco;
+$warning: $amarillo;
+$pink: $rosa;
+
+
+//fuentes
+$orbitron: 'Orbitron'; 
+$scada: 'Scada';
+
+//Media-queries
+// $small: 480px;
+$medium: 768px;
+$big: 1024px;
+$especial: 968px;
+
+//Importamos todo Bootstrap
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';

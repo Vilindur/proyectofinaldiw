@@ -1,0 +1,63 @@
+@use '../base/variables' as v;
+@use '../base/globals';
+@use '../base/mixins' as m;
+
+.main {
+    padding: 4rem;
+    @include m.creargrid (1, 80px);
+    height: auto;
+
+    &__container {
+        min-width: 300px;
+        background-color: v.$azul_claro;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    @include m.mobile {
+        
+        @include m.creargrid (2, 80px);
+        height: auto;
+    }
+
+    &__imgcontainer {
+        padding: 4rem;
+        max-width: 90%;
+    }
+
+    &__image {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__textcontainer {
+        height: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    &__title {
+        color: v.$negro;
+        font-family: v.$orbitron;
+        padding-bottom: 1rem;
+    }
+
+    &__text {
+        color: v.$negro;
+        font-family: v.$scada;
+        padding-bottom: 3rem;
+    }
+
+    &__button {
+        @include m.btn (v.$negro, v.$blanco);
+        max-width: 300px;
+        font-family: v.$scada;
+        font-size: 1.2rem;
+    }
+    
+    
+}

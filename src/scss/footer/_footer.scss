@@ -1,0 +1,57 @@
+@use '../base/variables' as v;
+@use '../base/globals';
+@use '../base/mixins' as m;
+
+.footer {
+    margin-top: 4rem;
+    background-color: v.$negro;
+    color: v.$blanco;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__container {
+        text-align: center;
+        font-family: v.$scada;
+        padding-right: 2rem;
+    }
+
+    &__title {
+        color: v.$white;
+        font-size: 2.5rem;
+    }
+
+    &__text {
+        color: v.$white;
+        font-size: 1.5rem;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:flex-start;
+        padding-bottom: 5rem;
+    }
+
+    &__img {
+        width: 35px;
+        height: 35px;
+    }
+
+    @include m.mobile {
+        &__title {
+            font-size: 3rem;
+        }
+    
+        &__text {
+            font-size: 2rem;   
+        }
+
+        &__img {
+            width: 55px;
+            height: 55px;
+        }
+    }
+}

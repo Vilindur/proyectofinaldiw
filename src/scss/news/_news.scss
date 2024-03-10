@@ -1,0 +1,52 @@
+@use '../base/variables' as v;
+@use '../base/globals';
+@use '../base/mixins' as m;
+
+.news {
+    @include m.creargridcompleto (1, auto, 40px);
+    padding: 4rem;
+    padding-bottom: 5rem;
+    justify-items: center;
+    align-self: center;
+    text-align: center;
+
+    &__imgcontainer {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img {
+        display: block;
+        height: 200px;
+        max-width: 100%;
+        
+
+        &:hover {
+            transform: scale(125%);
+        }
+    }
+
+    &__title {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: v.$negro;
+        font-family: v.$orbitron;
+        text-align: center;
+    }
+
+    &__text {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: v.$negro;
+        font-family: v.$scada;
+        text-align: center;
+    }
+
+
+    
+    @include m.mobileespecial {
+        @include m.creargridcompleto (3, 1, 40px);
+    }
+}

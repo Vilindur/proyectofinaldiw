@@ -1,0 +1,35 @@
+@use '../base/variables' as v;
+@use '../base/globals';
+@use '../base/mixins' as m;
+
+
+.header {
+    background-color: v.$azul_oscuro;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    &__logo {
+        padding: 2rem;
+        margin-left: 2rem;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+    }
+
+    &__title {
+        font-family: v.$orbitron;
+        font-size: 3rem;
+    }
+
+    &__button {
+        @include m.btn (v.$negro, v.$blanco);
+        max-width: 150px;
+        font-family: v.$scada;
+        font-size: 1.2rem;
+    }
+}
+

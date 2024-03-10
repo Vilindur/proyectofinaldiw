@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final DIW Reservas Deportivas</title>
+    <meta name="description" content="Proyecto final con bootstrap y sass">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&family=Nunito:wght@300&family=Orbitron:wght@400..900&family=Oswald&family=Poppins:wght@300;400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&family=Nunito:wght@300&family=Orbitron:wght@400..900&family=Oswald&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="build/css/styles.css"> -->
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="header__logo">
+            <a class="header__logolink" href="index.html"><img class="header__image" src="img/logo.png" alt="imagen_logo"></a>
+        </div>
+        <h1 class="header__title">Reservas deportivas AliBan</h1>
+        <a class="header__button boton" href="login.html">ACCESO CLIENTE</a>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="navigation">
+        <a class="navigation__link" href="index.html">Inicio</a>
+        <a class="navigation__link" href="facilities.html">Instalaciones</a>
+        <a class="navigation__link" href="news.html">Noticias</a>
+    </nav>
+
+    <!-- Sección principal de registro -->
+    <main class="mainlogin">
+        <!-- Formulario login -->
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="mainlogin__form card">
+                  <div class="mainlogin__formtitle card-header">
+                    <h3 class="card-title">Acceso a cliente</h3>
+                  </div>
+                  <div class="mainlogin__formcontent card-body">
+                    <form action="index.html">
+                      <div class="mainlogin__div mb-3">
+                        <label for="usuario" class="form-label">USUARIO</label>
+                        <input type="email" class="mainlogin__input form-control" name="usuario" placeholder="Introduce tu email">
+                      </div>
+                      <div class="mainlogin__div mb-3">
+                        <label for="contrasena" class="form-label">CONTRASEÑA</label>
+                        <input type="password" class="mainlogin__input form-control" name="contrasena" placeholder="Introduce tu contraseña">
+                      </div>
+                      <div class="mainlogin__div mb-3">
+                        <label for="repetir_contrasena" class="form-label">REPETIR CONTRASEÑA</label>
+                        <input type="password" class="mainlogin__input form-control" name="repetir_contrasena" placeholder="Repite tu contraseña">
+                      </div>
+                      <div class="mainlogin__divbutton">
+                        <button type="submit" class="mainlogin__link">REGISTRAR</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__container">
+            <h3 class="footer__title">Servicio de Deportes</h3>
+            <p class="footer__text">Ubicación: Calle Bomb deployed, 33, Moscú, Rusia</p>
+            <p class="footer__text">Edificio: Centro Deportivo T-34, Avenida Madre Rusia</p>
+            <p class="footer__text">Planta: Planta baja, Oficina 1230</p>
+        </div>
+
+        <div class="footer__container">
+            <h3 class="footer__title">Contacto</h1>
+            <p class="footer__text">Fijo: +7 950 313 465</p>
+            <p class="footer__text">Móvil: +7 677 653 234</p>
+            <p class="footer__text">Email: reservaAliban@gmail.ru</p>
+            <p class="footer__text">Fax: 965 323 535</p>
+        </div>
+
+        <div class="footer__container">
+            <h3 class="footer__title">Legal</h3>
+            <p class="footer__text">Términos legales</p>
+            <p class="footer__text">Aviso legal</p>
+            <p class="footer__text">Quejas y sugerencias</p>
+            <p class="footer__text">Política de privacidad</p>
+            <p class="footer__text">Accesibilidad</p>
+            <p class="footer__text">Protección de datos</p>
+        </div>
+
+        <div class="footer__container">
+            <div class="footer__links">
+                <a class="footer__link" href="https://vk.com/?lang=es"><img class="footer__img" src="img/vk.svg" alt="imagen_vk"></img></a>
+                <a class="footer__link" href="https://twitter.com/?lang=es"><img class="footer__img" src="img/twitter.svg" alt="imagen_twitter"></img></a>
+                <a class="footer__link" href="https://www.instagram.com/"><img class="footer__img" src="img/instagram.svg" alt="imagen_instagram"></img></a>
+                <a class="footer__link" href="https://www.facebook.com/?locale=es_ES"><img class="footer__img" src="img/facebook.svg" alt="imagen_facebook"></img></a>
+            </div>
+            <p class="footer__text">&copy; Reservas Deportivas Aliban 2023</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
